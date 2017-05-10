@@ -1,9 +1,9 @@
-
-zuul:
-  ignoredServices: '*'
-  host:
-    connect-timeout-millis: 20000
-    socket-timeout-millis: 20000
-
+spring:
+  profiles: development
+  zuul:
+    ignoredServices: '*'
+    host:
+      connect-timeout-millis: 20000
+      socket-timeout-millis: 20000
 server:
   port: 4000
