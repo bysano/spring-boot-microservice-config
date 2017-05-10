@@ -1,6 +1,6 @@
 spring:
   profiles: development
-  zuul:
+zuul:
     ignoredServices: '*'
     host:
       connect-timeout-millis: 20000
