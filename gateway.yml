@@ -15,6 +15,18 @@ zuul:
   host:
     connect-timeout-millis: 20000
     socket-timeout-millis: 20000
+  routes:
+    newsservice:
+        path: /newsservice/**
+        serviceId: newsservice
+        stripPrefix: false
+        sensitiveHeaders:
+
+    userservice:
+        path: /userservice/**
+        serviceId: userservice
+        stripPrefix: false
+        sensitiveHeaders:
 
 server:
   port: 4000
