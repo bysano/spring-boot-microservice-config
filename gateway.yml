@@ -4,17 +4,18 @@ zuul:
     connect-timeout-millis: 20000
     socket-timeout-millis: 20000
   routes:
+    test:
+      path: /redirect/**
+      url: http://google.com
     newsservice:
-        path: /newsservice/**
-        serviceId: newsservice
-        stripPrefix: false
-        sensitiveHeaders:
-
+      path: /news/**
+      serviceId: newsservice
     userservice:
-        path: /userservice/**
-        serviceId: userservice
-        stripPrefix: false
-        sensitiveHeaders:
+      path: /user/**
+      serviceId: userservice
+    static:
+      path: /static/**
+
 
 server:
   port: 4000
