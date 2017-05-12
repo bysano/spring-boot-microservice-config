@@ -29,13 +29,12 @@ endpoints:
     sensitive: false
 eureka:
   instance:
-    hostname: config-99.cfapps.io
-    nonSecurePort: 80
+    hostname: configserver
   client:
     registerWithEureka: true
     fetchRegistry: true
     serviceUrl:
-      defaultZone: http://discovery-kb.cfapps.io/eureka/
+      defaultZone: http://discovery:8761/eureka/
 
 ---
 
