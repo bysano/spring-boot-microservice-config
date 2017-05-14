@@ -1,4 +1,6 @@
 eureka:
+  instance:
+    hostname: gateway
   client:
     registerWithEureka: true
     fetchRegistry: true
