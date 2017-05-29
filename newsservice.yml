@@ -8,3 +8,11 @@ eureka:
     fetchRegistry: true
     serviceUrl:
       defaultZone: http://discovery:8761/eureka/
+endpoints:
+  actuator:
+    enabled: true
+
+management:
+  health:
+    defaults:
+      enabled: false
