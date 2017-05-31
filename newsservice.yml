@@ -14,3 +14,11 @@ endpoints:
 management:
   security:
     enabled: false
+spring:
+  data:
+    mongodb:
+      database: test
+      host: mongo-db
+      port: 27017
+userservice:
+  url: http://userservice:9090    
